@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import linkedin from './social-media-logos/linkedin.png'
 import instagram from './social-media-logos/instagram.png'
 import github from './social-media-logos/github.png'
@@ -13,15 +14,24 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-          Hey there,
-        </h1>
+        <div className="header">
+          <Image
+            priority
+            src="/public/images/profile.jpg"
+            height={144}
+            width={144}
+            alt="profile picture"
+          />
+          <h1 className="title">
+            Hey there,
+          </h1>
 
-        <p className="description">
+        </div>
+        <h3 class="description">
           My name is Samnang Lim and I am a student at Pomona College studying Computer Science and Economics.
           <br />
           This page serves as my portfolio and documents my progress as a software engineer, my work, as well as my personal interests. <br />Welcome!
-        </p>
+        </h3>
 
         <div className="grid">
           <Link href="projects/projects">
@@ -43,7 +53,7 @@ export default function Home() {
             <a className="card">
               <h3>About Me </h3>
               <p>
-                A summary of me and my skills.
+                A summary of me and what I'ved learned—— minus the things I'd love to learn.
               </p>
             </a>
           </Link>
@@ -155,7 +165,11 @@ export default function Home() {
         .description {
           text-align: center;
         }
-
+        
+        .header {
+          display:flex;
+          align-items: center;
+        }
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
@@ -235,6 +249,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </div >
   )
 }

@@ -21,12 +21,15 @@ export default function AboutMe() {
             My name is Samnang Lim and I enjoy building Computer Science projects with new tools I find on the internet. In fact, this website is a project in of itself using ReactJS, NodeJS, NextJS, and more!
             <br />
             <br />
-            Currently, I am a junior double majoring in Computer Science and Economics at Pomona College. Although the fields are strikingly different, both areas of study share the same goals: efficiency and optimization. In Computer Science we optimize algorithms for speed as well as improving efficiency by looking at consumer pain points, while in Economics we strive to find policies to optimize benefit to society and efficiently allocate resources. My goal as a hopeful Software Engineer is to combine these two interests of mine.
-          
+            Currently, I am a junior double majoring in Computer Science and Economics at Pomona College. Although the fields are strikingly different, both areas of study share the same goals: efficiency and optimization. In Computer Science we optimize algorithms for speed as well as improving efficiency by looking at consumer pain points, while in Economics we strive to find policies to optimize benefit to society and efficiently allocate resources.
+            <br />
+            <br />
+            My goal as a hopeful Software Engineer and a human is to combine these two interests of mine.
+
           </p>
         </a>
         <a className="skills">
-          <h4>Interested in my skills? I have experience with the following technologies: </h4>
+          <h4>Curious of my skills? I have experience in the following technologies: </h4>
           <ul>
             <li>python/pytorch/fastai</li>
             <li>react.js/node.js/next.js</li>
