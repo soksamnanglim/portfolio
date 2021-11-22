@@ -48,6 +48,11 @@ export default function Home() {
               My experiences beyond projects and academics.
             </p>
           </a>
+          <Link href="/about-me/about-me">
+            <a className="card">
+              <h3>About Me </h3>
+            </a>
+          </Link>
         </div>
       </main>
       <footer>
