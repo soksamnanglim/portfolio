@@ -30,7 +30,7 @@ export default function Home() {
               <p>My technical and non-technical work.</p>
             </a>
           </Link>
-          <Link href="/skills/skills">
+          {/* <Link href="/skills/skills">
             <a
               href=""
               className="card"
@@ -38,19 +38,24 @@ export default function Home() {
               <h3>Skills</h3>
               <p>What I know—minus the things I'd love to know.</p>
             </a>
-          </Link>
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Life</h3>
-            <p>
-              My experiences beyond projects and academics.
-            </p>
-          </a>
+          </Link> */}
           <Link href="/about-me/about-me">
             <a className="card">
               <h3>About Me </h3>
+              <p>
+                A summary of me and my skills.
+              </p>
+            </a>
+          </Link>
+          <Link href="/life/life">
+            <a
+              href=""
+              className="card"
+            >
+              <h3>Life</h3>
+              <p>
+                My experiences beyond projects and academics.
+              </p>
             </a>
           </Link>
         </div>

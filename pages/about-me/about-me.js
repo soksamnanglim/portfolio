@@ -22,7 +22,7 @@ export default function AboutMe() {
             <br />
             <br />
             Currently, I am a junior double majoring in Computer Science and Economics at Pomona College. Although the fields are strikingly different, both areas of study share the same goals: efficiency and optimization. In Computer Science we optimize algorithms for speed as well as improving efficiency by looking at consumer pain points, while in Economics we strive to find policies to optimize benefit to society and efficiently allocate resources. My goal as a hopeful Software Engineer is to combine these two interests of mine.
-
+          
           </p>
         </a>
         <a className="skills">
