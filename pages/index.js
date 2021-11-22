@@ -1,61 +1,70 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import linkedin from './social-media-logos/linkedin.png'
+import instagram from './social-media-logos/instagram.png'
+import github from './social-media-logos/github.png'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Soksamnang Lim</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Hey there,
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          My name is Samnang Lim and I am a student at Pomona College studying Computer Science and Economics.
+          <br />
+          This page serves as my portfolio and documents my progress as a software engineer, my work, as well as my personal interests. <br />Welcome!
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
+          <Link href="projects/projects">
+            <a href="" className="card">
+              <h3>My Projects</h3>
+              <p>My technical and non-technical work.</p>
+            </a>
+          </Link>
+          <Link href="/skills/skills">
+            <a
+              href=""
+              className="card"
+            >
+              <h3>Skills</h3>
+              <p>What I know—minus the things I'd love to know.</p>
+            </a>
+          </Link>
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className="card"
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Life</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              My experiences beyond projects and academics.
             </p>
           </a>
         </div>
       </main>
-
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+        <a>
+          <h3>
+            Let's connect.
+          </h3>
+        </a>
+        <a>
+          <div class="navbar">
+            {/* <a href="https://github.com/soksamnanglim" class="active" title="GITHUB"><img src={github} /></a>
+            <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="LINKEDIN"><img src={linkedin} /></a>
+            <a href="https://instagram.com/soksamnanglim" title="INSTAGRAM"><img src={instagram} /></a> */}
+            <a href="https://github.com/soksamnanglim" class="active" title="github"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
+            <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="linkedin"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
+            <a href="https://instagram.com/soksamnanglim" title="instagram"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
+          </div>
         </a>
       </footer>
 
@@ -82,19 +91,32 @@ export default function Home() {
           width: 100%;
           height: 100px;
           border-top: 1px solid #eaeaea;
-          display: flex;
+          display: inline;
           justify-content: center;
           align-items: center;
+          text-align: center;
         }
 
         footer img {
           margin-left: 0.5rem;
+          margin-right: 0.5rem;
+          margin-down: 0.5rem;
+          max-width: 5%;
         }
 
         footer a {
-          display: flex;
+          display: inline;
           justify-content: center;
           align-items: center;
+        }
+
+        .navbar {
+          border: 1px solid #ccc;
+          border-widtth: 1px 0;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
         }
 
         a {
@@ -140,10 +162,9 @@ export default function Home() {
 
         .grid {
           display: flex;
-          align-items: center;
+          align-items: stretch;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
         }
