@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import linkedin from './social-media-logos/linkedin.png'
-import instagram from './social-media-logos/instagram.png'
-import github from './social-media-logos/github.png'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faGithub,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   return (
@@ -71,21 +74,14 @@ export default function Home() {
         </div>
       </main>
       <footer>
-        <a>
-          <h3>
-            Let's connect.
-          </h3>
-        </a>
-        <a>
-          <div class="navbar">
-            <a href="https://github.com/soksamnanglim" class="active" title="GITHUB"><img src={github} /></a>
-            <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="LINKEDIN"><img src={linkedin} /></a>
-            <a href="https://instagram.com/soksamnanglim" title="INSTAGRAM"><img src={instagram} /></a>
-            {/* <a href="https://github.com/soksamnanglim" class="active" title="github"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
-            <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="linkedin"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
-            <a href="https://instagram.com/soksamnanglim" title="instagram"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a> */}
-          </div>
-        </a>
+        <h3>
+          Let's connect.
+        </h3>
+        <div class="navbar">
+          <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="LINKEDIN" className="linkedin social"><FontAwesomeIcon icon={faLinkedin} size="fa-xs" /> </a>
+          <a href="https://github.com/soksamnanglim" title="GITHUB" className="github social"><FontAwesomeIcon icon={faGithub} size="fa-xs" /></a>
+          <a href="https://instagram.com/soksamnanglim" title="INSTAGRAM" className="instagram social"><FontAwesomeIcon icon={faInstagram} size="fa-xs" /> </a>
+        </div>
       </footer>
 
       <style jsx>{`
@@ -117,21 +113,15 @@ export default function Home() {
           text-align: center;
         }
 
-        footer img {
-          display: center;
+        footer a {
+          width: 3%;
           margin-left: 0.5rem;
           margin-right: 0.5rem;
           margin-down: 0.5rem;
-          max-width: 5%;
-        }
-
-        footer a {
-          display: inline;
-          justify-content: center;
-          align-items: center;
         }
 
         .navbar {
+          padding: 25px 50px;
           border: 1px solid #ccc;
           border-widtth: 1px 0;
           list-style: none;
@@ -139,10 +129,24 @@ export default function Home() {
           padding: 0;
           text-align: center;
         }
-
         a {
           color: inherit;
           text-decoration: none;
+        }
+        a.social {
+          margin: 0.1rem;
+          transition: transform 250ms;
+          display: inline-block;
+        }
+        a.instagram {
+          color: black;
+        }
+
+        a.linkedin {
+          color: #0e76a8;
+        }
+        a.github {
+          color: black;
         }
 
         .title a {
