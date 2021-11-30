@@ -30,7 +30,7 @@ export default function Projects() {
           </a>
 
           <a
-            href=""
+            href="https://github.com/soksamnanglim/CSCI181AA"
             className="card"
           >
             <h3>Recipes</h3>

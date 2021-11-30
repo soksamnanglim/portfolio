@@ -30,7 +30,7 @@ export default function Home() {
         <h3 class="description">
           My name is Samnang Lim and I am a student at Pomona College studying Computer Science and Economics.
           <br />
-          This page serves as my portfolio and documents my progress as a software engineer, my work, as well as my personal interests. <br />Welcome!
+          This page serves as my portfolio and documents my progress in technology, my work, as well as my personal interests. <br />Thanks for visiting!
         </h3>
 
         <div className="grid">
@@ -118,6 +118,7 @@ export default function Home() {
         }
 
         footer img {
+          display: center;
           margin-left: 0.5rem;
           margin-right: 0.5rem;
           margin-down: 0.5rem;
