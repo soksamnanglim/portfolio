@@ -84,8 +84,8 @@ export default function Home() {
         </h3>
         <div class="navbar">
           <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="LINKEDIN" className="linkedin social"><FontAwesomeIcon icon={faLinkedin} size="fa-xs" /> </a>
-          <a href="https://github.com/soksamnanglim" title="GITHUB" className="github social"><FontAwesomeIcon icon={faGithub} size="fa-xs" /></a>
-          <a href="https://instagram.com/soksamnanglim" title="INSTAGRAM" className="instagram social"><FontAwesomeIcon icon={faInstagram} size="fa-xs" /> </a>
+          <a href="https://github.com/soksamnanglim/" title="GITHUB" className="github social"><FontAwesomeIcon icon={faGithub} size="fa-xs" /></a>
+          <a href="https://instagram.com/soksamnanglim/" title="INSTAGRAM" className="instagram social"><FontAwesomeIcon icon={faInstagram} size="fa-xs" /> </a>
         </div>
       </footer>
 

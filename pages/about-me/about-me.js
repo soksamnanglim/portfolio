@@ -47,12 +47,9 @@ export default function AboutMe() {
         </a>
         <a>
           <div class="navbar">
-            {/* <a href="https://github.com/soksamnanglim" class="active" title="GITHUB"><img src={github} /></a>
-          <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="LINKEDIN"><img src={linkedin} /></a>
-          <a href="https://instagram.com/soksamnanglim" title="INSTAGRAM"><img src={instagram} /></a> */}
-            <a href="https://github.com/soksamnanglim" class="active" title="github"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
-            <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="linkedin"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
-            <a href="https://instagram.com/soksamnanglim" title="instagram"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
+            <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="LINKEDIN" className="linkedin social"><FontAwesomeIcon icon={faLinkedin} size="fa-xs" /> </a>
+            <a href="https://github.com/soksamnanglim/" title="GITHUB" className="github social"><FontAwesomeIcon icon={faGithub} size="fa-xs" /></a>
+            <a href="https://instagram.com/soksamnanglim/" title="INSTAGRAM" className="instagram social"><FontAwesomeIcon icon={faInstagram} size="fa-xs" /> </a>
           </div>
         </a>
       </footer>
