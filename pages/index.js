@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import propic from "../public/images/profilepic.jpeg";
 import {
   faInstagram,
   faGithub,
@@ -18,17 +19,21 @@ export default function Home() {
 
       <main>
         <div className="header">
-          <Image
-            priority
-            src="/public/images/profile.jpg"
-            height={144}
-            width={144}
-            alt="profile picture"
-          />
-          <h1 className="title">
-            Hey there,
-          </h1>
-
+          <a>
+            <Image
+              priority
+              placeholder="blur"
+              src={propic}
+              height={144}
+              width={144}
+              alt="profile picture"
+            />
+          </a>
+          <a>
+            <h1 className="title">
+              Hey there,
+            </h1>
+          </a>
         </div>
         <h3 class="description">
           My name is Samnang Lim and I am a student at Pomona College studying Computer Science and Economics.
@@ -174,6 +179,10 @@ export default function Home() {
         .header {
           display:flex;
           align-items: center;
+        }
+        .header a {
+          margin-left:0.5rem;
+          margin-right:0.5rem;
         }
         .description {
           line-height: 1.5;

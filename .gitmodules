@@ -1,0 +1,3 @@
+[submodule "public/images/expose"]
+	path = public/images/expose
+	url = https://github.com/Jack000/Expose.git
