@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import heart from './heartnet.png'
+import linkedin from '../social-media-logos/linkedin.png'
+import instagram from '../social-media-logos/instagram.png'
+import github from '../social-media-logos/github.png'
+
 export default function Projects() {
   return (
 
@@ -24,7 +27,6 @@ export default function Projects() {
           <a href="https://oapostrophe.github.io/heartnet/" className="card">
             <div class="project">
               <h3>Heartnet</h3>
-              <img src="https://cdn.pixabay.com/photo/2016/05/06/05/47/heart-rate-1375322_1280.png" />
             </div>
             <p>An AI application using convolutional neural networks to determine and identify myocardial infarctions (heart attacks) EKGs from normal EKGs using large EKG datasets. Achieved a 90+% accuracy rate. </p>
           </a>
@@ -60,7 +62,7 @@ export default function Projects() {
               My Economics paper exploring whether or not the likelihood of divorce depends on an individual's gender and income. <br />Statistics tool used: multivariate regression.
             </p>
           </a>
-          <a href="" className="card">
+          <a className="card">
             <h3>
               Unemployment Rates and Vaccine Hesitancy
             </h3>
@@ -81,9 +83,6 @@ export default function Projects() {
             <a href="https://github.com/soksamnanglim" class="active" title="GITHUB"><img src={github} /></a>
             <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="LINKEDIN"><img src={linkedin} /></a>
             <a href="https://instagram.com/soksamnanglim" title="INSTAGRAM"><img src={instagram} /></a>
-            {/* <a href="https://github.com/soksamnanglim" class="active" title="github"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
-            <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="linkedin"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
-            <a href="https://instagram.com/soksamnanglim" title="instagram"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a> */}
           </div>
         </a>
       </footer>
