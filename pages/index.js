@@ -78,12 +78,12 @@ export default function Home() {
         </a>
         <a>
           <div class="navbar">
-            {/* <a href="https://github.com/soksamnanglim" class="active" title="GITHUB"><img src={github} /></a>
+            <a href="https://github.com/soksamnanglim" class="active" title="GITHUB"><img src={github} /></a>
             <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="LINKEDIN"><img src={linkedin} /></a>
-            <a href="https://instagram.com/soksamnanglim" title="INSTAGRAM"><img src={instagram} /></a> */}
-            <a href="https://github.com/soksamnanglim" class="active" title="github"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
+            <a href="https://instagram.com/soksamnanglim" title="INSTAGRAM"><img src={instagram} /></a>
+            {/* <a href="https://github.com/soksamnanglim" class="active" title="github"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
             <a href="https://www.linkedin.com/in/soksamnang-lucky-l-12b363195/" title="linkedin"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
-            <a href="https://instagram.com/soksamnanglim" title="instagram"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a>
+            <a href="https://instagram.com/soksamnanglim" title="instagram"><img src="https://www.gannett-cdn.com/media/2021/06/03/USATODAY/usatsports/imageForEntry18-8on.jpg?width=2560" /></a> */}
           </div>
         </a>
       </footer>
